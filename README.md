@@ -16,6 +16,9 @@ You need to follow the tutorial on [Bezkoder Mongoose Tutorial](https://www.bezk
 - Rename the database name present in db.config.js to use local database instead of bezkoder_db
 - Test the APIs from Postman
 - Make changes to the Tutorials schema and add new fields like author,likes and ratings
+- What is the use of cors package?
+- What is a middleware in Express? How does it work?
+- What are query params, path params and body payload? How to send those from Postman? How to capture those in express code?
 
 
 
