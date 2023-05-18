@@ -22,3 +22,32 @@ You need to follow the tutorial on [Bezkoder Mongoose Tutorial](https://www.bezk
 
 
 
+## Assignment 1: Setting up the project
+
+1. Install Node.js and MongoDB on your computer if you don't have them already.
+2. Create a new project folder for your API.
+3. Initialize a new Node.js project in your project folder using the command "npm init".
+4. Install the following dependencies using npm: express, mongoose, body-parser, cors.
+5. Create a new file called "server.js" in your project folder.
+
+## Assignment 2: Defining the API endpoints
+
+1. In the "server.js" file, require the dependencies you installed in the previous step.
+2. Create a new instance of the Express.js application using the "express()" function.
+3. Define the HTTP methods and routes for your API endpoints using the app object. For example: app.get('/products', function(req, res) { ... }).
+4. Use the "body-parser" middleware to parse incoming request data.
+5. Use the "cors" middleware to enable cross-origin resource sharing.
+
+## Assignment 3: Connecting to the MongoDB database
+
+1. Define a MongoDB connection string using the "mongoose.connect()" function. This should include the database name and your authentication credentials if necessary.
+2. Create a new Mongoose schema for your data model. For example: var tutorialSchema = new mongoose.Schema({ name: String, description: String, ... }).
+3. Create a new Mongoose model using the schema you defined. For example: var Tutorial = mongoose.model('Tutorial', tutorialSchema).
+4. Use the Mongoose model to perform CRUD operations on the MongoDB database. For example: Tutorial.find({}, function(err, products) { ... }).
+
+## Assignment 4: Testing the API
+
+1. Start your API server using the "node server.js" command.
+2. Use a tool like Postman or curl to send HTTP requests to your API endpoints.
+3. Verify that your API is working correctly by checking the response data and any error messages.
+4. Debug any issues or errors that you encounter.
